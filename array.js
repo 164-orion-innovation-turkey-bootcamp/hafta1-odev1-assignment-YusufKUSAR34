@@ -21,3 +21,5 @@ console.log(findIndexPairs(array, target));
 
 var finish = performance.now();//measuring code execution speed
 console.log(`Code performance testing: ${start - finish} millisecond`);
+
+//BigO Notation: Time = O(n^2)
