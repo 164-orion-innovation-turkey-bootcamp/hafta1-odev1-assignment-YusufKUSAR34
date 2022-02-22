@@ -5,7 +5,7 @@ let target = 9;
 
 //Function that returns indexes of pairs whose sum is equal to the target
 function getIndexPairs(nums, target) {
-	let numIndexs = []; // hold the index pairs
+	let numIndexs = []; // hold the index dual
 	for (let i = 0; i < nums.length; i++) {
 		for (let j = i + 1; j < nums.length; j++) {
 			if (nums[i] + nums[j] === target) {
@@ -20,6 +20,6 @@ function getIndexPairs(nums, target) {
 console.log(getIndexPairs(nums, target));
 
 var finish = performance.now();//measuring code execution speed
-console.log(`Code performance testing: ${start - finish} millisecond`);
+console.log(`Code performance testing: ${finish - start} millisecond`);
 
 //BigO Notation: Time = O(n^2)
