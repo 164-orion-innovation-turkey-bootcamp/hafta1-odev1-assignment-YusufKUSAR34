@@ -5,7 +5,7 @@ let target = 9;
 
 //Function that returns indexes of pairs whose sum is equal to the target
 function findIndexPairs(array, target) {
-	let numIndexs = []; // store the index pairs
+	let numIndexs = []; // hold the index pairs
 	for (let i = 0; i < array.length; i++) {
 		for (let j = i + 1; j < array.length; j++) {
 			if (array[i] + array[j] === target) {
