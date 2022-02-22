@@ -1,6 +1,6 @@
 var start = performance.now();//measuring code execution speed
 
-let array = [2,7,11,15,1,8]; 
+let array = new Array(2,7,11,15,1,8); 
 let target = 9; 
 
 //Function that returns indexes of pairs whose sum is equal to the target
