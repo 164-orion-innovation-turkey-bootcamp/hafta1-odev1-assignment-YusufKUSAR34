@@ -1,14 +1,14 @@
 var start = performance.now();//measuring code execution speed
 
-let array = new Array(2,7,11,15,1,8); 
+let nums = new Array(2,7,11,15,1,8); 
 let target = 9; 
 
 //Function that returns indexes of pairs whose sum is equal to the target
-function findIndexPairs(array, target) {
+function getIndexPairs(nums, target) {
 	let numIndexs = []; // hold the index pairs
-	for (let i = 0; i < array.length; i++) {
-		for (let j = i + 1; j < array.length; j++) {
-			if (array[i] + array[j] === target) {
+	for (let i = 0; i < nums.length; i++) {
+		for (let j = i + 1; j < nums.length; j++) {
+			if (nums[i] + nums[j] === target) {
 				// Adds index numbers of pairs whose sum is equal to the target.
 				numIndexs.push([i, j]);
 			}
@@ -17,7 +17,7 @@ function findIndexPairs(array, target) {
 	return numIndexs; // returns indexes 
 };
 
-console.log(findIndexPairs(array, target));
+console.log(getIndexPairs(nums, target));
 
 var finish = performance.now();//measuring code execution speed
 console.log(`Code performance testing: ${start - finish} millisecond`);
